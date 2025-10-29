@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title | default: site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/output.css' | relative_url }}">
+</head>
+  <body class="bg-gray-900">
+    {{ content }}
+  </body>
+</html>
