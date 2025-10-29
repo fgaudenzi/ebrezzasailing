@@ -21,27 +21,39 @@
   </div>
 </nav>
 
- <!-- Hero Section -->
-  <section class="relative w-full h-screen flex items-center justify-center overflow-hidden">
-    <!-- Video -->
-    <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover filter brightness-100 z-0">
-      <source src="/ebrezzasailing/assets/videos/video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+<!-- Hero Section -->
+<section class="relative w-full h-screen flex items-center justify-center overflow-hidden">
+  <!-- Video -->
+  <video 
+    autoplay muted loop playsinline webkit-playsinline preload="auto"
+    class="absolute top-0 left-0 w-full h-full object-cover filter brightness-100 z-0 pointer-events-none">
+    <source src="/ebrezzasailing/assets/videos/video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
-    <!-- Overlay scuro -->
-    <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 z-10"></div>
+  <!-- Overlay scuro -->
+  <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-40 z-10"></div>
 
-    <!-- Testo centrato -->
-    <div class="relative z-20 text-center px-4">
-      <h1 class="text-5xl md:text-6xl font-extrabold text-white drop-shadow-2xl mb-4 animate-fadeIn">
+  <!-- Testo centrato -->
+  <div class="relative z-20 text-center px-6">
+    <a href="#about">
+        <div 
+      class="group inline-block p-10 md:p-20 rounded-lg  transition-all duration-700 ease-in-out border-[2px] border-transparent hover:border-white/90 hoverbg-opacity-10"
+    >
+      <h1 
+        class="text-5xl md:text-6xl font-extrabold text-white drop-shadow-[0_5px_15px_rgba(0,0,0,0.8)] mb-4 animate-fadeIn tracking-wider"
+        style="text-shadow: 2px 2px 4px rgba(0,0,0,0.8), -2px -2px 4px rgba(255,255,255,0.1)"
+      >
         Ebrezza Sailing
       </h1>
       <p class="max-w-xl mx-auto text-lg md:text-xl text-white drop-shadow-2xl animate-fadeIn delay-500">
-        Immagina di salire a bordo di una splendida barca a vela, issare le vele e salpare per vivere un’esperienza unica, che combina la passione per il mare, a quella per il buon vino.
+        Immagina di salire a bordo di una splendida barca a vela, issare le vele e salpare per vivere un’esperienza unica, che combina la passione per il mare e quella per il buon vino.
       </p>
     </div>
-  </section>
+    </a>
+  </div>
+</section>
+
 <section id="about" class="py-20 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
