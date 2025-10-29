@@ -3,49 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <title>Ebrezza Sailing</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/ebrezzasailing/assets/css/output.css">
-  
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
   <body class="bg-gray-900">
-    <nav class="fixed top-0 w-full bg-primary bg-opacity-30 backdrop-blur-md shadow-md z-50 text-text-light">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
-    <a href="/ebrezzasailing/" class="flex items-center gap-2">
-      <img src="/ebrezzasailing/assets/images/logo.png" alt="Logo" class="h-10 w-10 rounded-full border-2 border-secondary">
-      <span class="font-bold text-xl text-white tracking-wide">eBreZza</span>
-    </a>
-    <ul class="flex gap-6 text-background font-medium">
-      <li><a href="#about" class="hover:text-secondary transition">Chi siamo</a></li>
-      <li><a href="#experience" class="hover:text-secondary transition">Esperienze</a></li>
-      <li><a href="#tasting" class="hover:text-secondary transition">Wine Tasting</a></li>
-      <li><a href="#contact" class="hover:text-secondary transition">Contatti</a></li>
-    </ul>
+    <!-- Navbar -->
+<nav class="fixed top-0 w-full bg-primary bg-opacity-30 backdrop-blur-md shadow-md z-50 text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+
+      <!-- Logo -->
+      <a href="/ebrezzasailing/" class="flex items-center gap-2">
+        <img src="/ebrezzasailing/assets/images/logo.png" alt="Logo" class="h-8 w-8 rounded-full border-2 border-white">
+        <span class="font-bold text-xl tracking-wide">eBreZza</span>
+      </a>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center space-x-6">
+        <a href="#about" class="text-white hover:text-secondary transition">Chi siamo</a>
+        <a href="#experience" class="text-white hover:text-secondary transition">Esperienze</a>
+        <a href="#tasting" class="text-white hover:text-secondary transition">Wine Tasting</a>
+         <a href="#crew" class="text-white hover:text-secondary transition">Equipaggio</a>
+        <a href="#contact" class="text-white hover:text-secondary transition">Contatti</a>
+      </div>
+
+      <!-- Mobile Button -->
+      <div class="md:hidden flex items-center">
+        <button class="mobile-menu-button p-2 rounded-md hover:bg-primary-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
+          <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu hidden md:hidden px-4 pb-4">
+    <a href="#about" class="block py-2 px-2 text-white hover:text-secondary transition">Chi siamo</a>
+    <a href="#experience" class="block py-2 px-2 text-white hover:text-secondary transition">Esperienze</a>
+    <a href="#tasting" class="block py-2 px-2 text-white hover:text-secondary transition">Wine Tasting</a>
+    <a href="#equipaggio" class="block py-2 px-2 text-white hover:text-secondary transition">Equipaggio</a>
+    <a href="#contact" class="block py-2 px-2 text-white hover:text-secondary transition">Contatti</a>
   </div>
 </nav>
 
- <!-- Hero Section -->
-  <section class="relative w-full h-screen flex items-center justify-center overflow-hidden">
-    <!-- Video -->
-   <video autoplay muted loop playsinline webkit-playsinline preload="auto" class="absolute top-0 left-0 w-full h-full object-cover filter brightness-100 z-0 pointer-events-none visible sm:invisible">
-      <source src="/ebrezzasailing/assets/videos/video.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+<!-- JS -->
+<script>
+  const btn = document.querySelector("button.mobile-menu-button");
+  const menu = document.querySelector(".mobile-menu");
 
-    <!-- Overlay scuro -->
-    <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 z-10"></div>
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+</script>
 
-    <!-- Testo centrato -->
-    <div class="relative z-20 text-center px-4">
-      <div class="inline-block p-12 md:p-16 rounded-lg ">
+<!-- Hero Section -->
+<section class="relative w-full h-screen flex items-center justify-center overflow-hidden">
+  <!-- Video -->
+  <video autoplay muted loop playsinline webkit-playsinline preload="auto" 
+         class="absolute top-0 left-0 w-full h-full object-cover filter brightness-100 z-0 pointer-events-none invisible md:visible">
+    <source src="/ebrezzasailing/assets/videos/video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <img class="absolute top-0 left-0 w-full h-full object-cover filter brightness-100 z-0 pointer-events-none visible md:invisible" 
+       src="/ebrezzasailing/assets/images/vela-escursione.jpg">
+
+  <!-- Overlay scuro -->
+  <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 z-10"></div>
+
+  <!-- Testo centrato con logo -->
+  <div class="relative z-20 text-center px-4 flex flex-col md:flex-row items-center justify-center gap-8">
     
-        <h1 class="text-5xl md:text-6xl font-extrabold text-white drop-shadow-[0_5px_15px_rgba(0,0,0,0.8)] mb-4 animate-fadeIn tracking-wider"  style="text-shadow: 2px 2px 4px rgba(0,0,0,0.8), -2px -2px 4px rgba(255,255,255,0.1) ">
-          Ebrezza Sailing
-        </h1>
-    <hr>
-        <p class="max-w-xl mx-auto text-lg md:text-xl text-white drop-shadow-2xl animate-fadeIn delay-500">
-          Immagina di salire a bordo di una splendida barca a vela, issare le vele e salpare per vivere un'esperienza unica, che combina la passione per il mare, a quella per il buon vino.
+    <!-- Immagine tonda tipo logo -->
+    <img src="/ebrezzasailing/assets/images/logo.png" 
+         alt="Logo" 
+         class="h-32 w-32 md:h-40 md:w-40 rounded-full shadow-lg flex-shrink-0">
+
+    <!-- Testo -->
+    <div class="max-w-xl text-center md:text-left">
+      <h1 class="text-5xl md:text-5xl font-extrabold text-white drop-shadow-[0_5px_15px_rgba(0,0,0,0.8)] mb-4 animate-fadeIn tracking-wider"  
+          style="text-shadow: 2px 2px 4px rgba(0,0,0,0.8), -2px -2px 4px rgba(255,255,255,0.1)">
+        Ebrezza Vela & Vino
+      </h1>
+      <hr class="border-white border-opacity-30 mb-4">
+      <p class="text-lg md:text-xl text-white drop-shadow-2xl animate-fadeIn delay-500">
+        Immagina di salire a bordo di una splendida barca a vela, issare le vele e salpare per vivere un'esperienza unica, che combina la passione per il mare, a quella per il buon vino.
       </p>
     </div>
-  </section>
+
+  </div>
+</section>
+
 <section id="about" class="py-20 bg-white">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
@@ -73,7 +125,7 @@
           immersi nella natura e nella compagnia giusta.
         </p>
         <a href="#experience" 
-           class="inline-block mt-4 bg-primary text-text-light py-3 px-6 rounded-full hover:bg-primary-dark transition">
+           class="inline-block mt-4 bg-primary text-white py-3 px-6 rounded-full hover:bg-primary/90 transition transition">
           Scopri le nostre esperienze
         </a>
       </div>
@@ -172,6 +224,147 @@
       </div>
     </div>
 
+  </div>
+</section>
+
+<!-- _includes/equipaggio.html -->
+<section id="equipaggio" class="py-20 py-20 bg-gradient-to-b from-secondary/90 to-secondary/60 text-accent text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-4xl font-extrabold mb-4">Il nostro equipaggio</h2>
+    <p class="text-lg text-gray-300 mb-12">
+      Conosci le persone che rendono ogni esperienza a bordo di Ebrezza Sailing unica e indimenticabile.
+    </p>
+
+    <!-- Grid membri -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      
+      <!-- Singolo membro -->
+      <div class="flex flex-col items-center">
+        <img src="/ebrezzasailing/assets/images/team/marco.jpg" alt="Marco Rossi" 
+             class="h-32 w-32 rounded-full border-4 border-secondary shadow-lg mb-4 object-cover">
+        <h3 class="text-xl font-semibold">Ilaria Migliorini</h3>
+        <p class="text-gray-400">Capitano</p>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <img src="/ebrezzasailing/assets/images/team/giulia.jpg" alt="Giulia Bianchi" 
+             class="h-32 w-32 rounded-full border-4 border-secondary shadow-lg mb-4 object-cover">
+        <h3 class="text-xl font-semibold">Marco Capitano</h3>
+        <p class="text-gray-400">Aiuto Capitano</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- _includes/recensioni.html -->
+<section id="recensioni" class="py-20 bg-white text-black">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-4xl font-extrabold mb-4">Cosa dicono di noi</h2>
+    <p class="text-lg text-gray-600 mb-12">
+      Le recensioni autentiche sul nostro servizio raccontano più di ogni parola.
+    </p>
+
+    <!-- Grid recensioni -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+        <div class="bg-gradient-to-b from-primary/90 to-primary/60 rounded-lg p-6 shadow-lg">
+          <div class="flex items-center mb-4">
+            <div class="h-12 w-12 rounded-full overflow-hidden mr-4 flex-shrink-0 border-solid border-2">
+              <img src="/ebrezzasailing/assets/images/reviews/angelica.png" alt="Angelica" class="h-full w-full object-cover ">
+            </div>
+            <div class="text-left">
+              <p class="font-semibold text-white">Angelica</p>
+              <div class="flex items-center text-yellow-400">
+                
+                  
+                    <svg class="h-5 w-5 fill-current" viewBox="0 0 20 20">
+                      <path d="M10 15l-5.878 3.09 1.123-6.545L.488 6.91l6.562-.955L10 0l2.95 5.955 6.562.955-4.757 4.635 1.123 6.545z"/>
+                    </svg>
+                  
+                
+                  
+                    <svg class="h-5 w-5 fill-current" viewBox="0 0 20 20">
+                      <path d="M10 15l-5.878 3.09 1.123-6.545L.488 6.91l6.562-.955L10 0l2.95 5.955 6.562.955-4.757 4.635 1.123 6.545z"/>
+                    </svg>
+                  
+                
+                  
+                    <svg class="h-5 w-5 fill-current" viewBox="0 0 20 20">
+                      <path d="M10 15l-5.878 3.09 1.123-6.545L.488 6.91l6.562-.955L10 0l2.95 5.955 6.562.955-4.757 4.635 1.123 6.545z"/>
+                    </svg>
+                  
+                
+                  
+                    <svg class="h-5 w-5 fill-current" viewBox="0 0 20 20">
+                      <path d="M10 15l-5.878 3.09 1.123-6.545L.488 6.91l6.562-.955L10 0l2.95 5.955 6.562.955-4.757 4.635 1.123 6.545z"/>
+                    </svg>
+                  
+                
+                  
+                    <svg class="h-5 w-5 fill-current" viewBox="0 0 20 20">
+                      <path d="M10 15l-5.878 3.09 1.123-6.545L.488 6.91l6.562-.955L10 0l2.95 5.955 6.562.955-4.757 4.635 1.123 6.545z"/>
+                    </svg>
+                  
+                
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-900 italic">“Esperienza meravigliosa. Siamo stati con Ilaria e Valerio, due persone estremamente professionali e preparate che hanno reso l’esperienza magica. Ilaria bravissima e super competente ci accompagnava un buon vino al cibo ( altrettanto ottimo ). Colazione, pranzo, cena e aperitivo da sogno con sfondo il mare di Ponza e Palmarola! Davvero riduttivo spiegarlo a parole, il prossimo anno ci tornerò sicuramente”</p>
+        </div>
+      
+        <div class="bg-gradient-to-b from-primary/90 to-primary/60 rounded-lg p-6 shadow-lg">
+          <div class="flex items-center mb-4">
+            <div class="h-12 w-12 rounded-full overflow-hidden mr-4 flex-shrink-0 border-solid border-2">
+              <img src="/ebrezzasailing/assets/images/reviews/stefano.png" alt="Stefano" class="h-full w-full object-cover ">
+            </div>
+            <div class="text-left">
+              <p class="font-semibold text-white">Stefano</p>
+              <div class="flex items-center text-yellow-400">
+                
+                  
+                    <svg class="h-5 w-5 fill-current" viewBox="0 0 20 20">
+                      <path d="M10 15l-5.878 3.09 1.123-6.545L.488 6.91l6.562-.955L10 0l2.95 5.955 6.562.955-4.757 4.635 1.123 6.545z"/>
+                    </svg>
+                  
+                
+                  
+                    <svg class="h-5 w-5 fill-current" viewBox="0 0 20 20">
+                      <path d="M10 15l-5.878 3.09 1.123-6.545L.488 6.91l6.562-.955L10 0l2.95 5.955 6.562.955-4.757 4.635 1.123 6.545z"/>
+                    </svg>
+                  
+                
+                  
+                    <svg class="h-5 w-5 fill-current" viewBox="0 0 20 20">
+                      <path d="M10 15l-5.878 3.09 1.123-6.545L.488 6.91l6.562-.955L10 0l2.95 5.955 6.562.955-4.757 4.635 1.123 6.545z"/>
+                    </svg>
+                  
+                
+                  
+                    <svg class="h-5 w-5 fill-current" viewBox="0 0 20 20">
+                      <path d="M10 15l-5.878 3.09 1.123-6.545L.488 6.91l6.562-.955L10 0l2.95 5.955 6.562.955-4.757 4.635 1.123 6.545z"/>
+                    </svg>
+                  
+                
+                  
+                    <svg class="h-5 w-5 fill-current" viewBox="0 0 20 20">
+                      <path d="M10 15l-5.878 3.09 1.123-6.545L.488 6.91l6.562-.955L10 0l2.95 5.955 6.562.955-4.757 4.635 1.123 6.545z"/>
+                    </svg>
+                  
+                
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-900 italic">“Esperienza eccellente Ilaria un’ottima “Capitana” simpatica e solare, si vede che sa come andare per mare e padroneggia la barca con arte marinaresca; oltre le doti tecnico nautiche è anche la sommelier e la cuoca della barca per rendere l’esperienza ancora più piacevole; alla fine si dovrà pur mangiare e bene e sicuro non è un pasto tanto a riempiere. La giornata a bordo scorre piacevole e in totale relax. Consigliatissima a chi legge e io sicuramente ci tornerò.”</p>
+        </div>
+      
+    </div>
+
+    <!-- Bottone per link Google -->
+    <div class="mt-12 text-center">
+      <a href="https://www.google.com/search?sa=X&sca_esv=71556d6a5c4e6ebd&tbm=lcl&sxsrf=AE3TifOaFT9C9pNiS0t_XR7A-12WYwWuXg:1761780103176&q=eBrezza%20-%20Vela%20e%20Vino%20Recensioni&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxI2MbAwtDQ2MjEytbAwsDQyMTey3MDI-IpRIdWpKLWqKlFBVyEsNSdRIVUhLDMvXyEoNTk1rzgzPy9zEStBJQDgjRuFYAAAAA&rldimm=4081932425880924729&hl=it-DE&ved=0CAcQ5foLahcKEwjA4YGqxsqQAxUAAAAAHQAAAAAQBg&biw=1920&bih=945&dpr=1#lkt=LocalPoiReviews&arid=Ci9DQUlRQUNvZENodHljRjlvT2xaSFRtTlNTalJ2YlhFNVVWZGxjMlp4ZFY5WlNHYxAB" target="_blank" 
+         class="inline-block bg-primary hover:bg-primary/90  text-white font-semibold py-3 px-6 rounded-lg transition">
+        Vedi tutte le recensioni su Google
+      </a>
+    </div>
   </div>
 </section>
 
