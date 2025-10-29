@@ -1,11 +1,221 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ebrezza Sailing</title>
+  <link rel="stylesheet" href="/assets/css/output.css">
+</head>
+  <body class="bg-gray-900">
+    <nav class="fixed top-0 w-full bg-primary bg-opacity-30 backdrop-blur-md shadow-md z-50 text-text-light">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
+    <a href="/" class="flex items-center gap-2">
+      <img src="/assets/images/logo.png" alt="Logo" class="h-10 w-10 rounded-full border-2 border-secondary">
+      <span class="font-bold text-xl text-white tracking-wide">eBreZza</span>
+    </a>
+    <ul class="flex gap-6 text-background font-medium">
+      <li><a href="#about" class="hover:text-secondary transition">Chi siamo</a></li>
+      <li><a href="#experience" class="hover:text-secondary transition">Esperienze</a></li>
+      <li><a href="#tasting" class="hover:text-secondary transition">Wine Tasting</a></li>
+      <li><a href="#contact" class="hover:text-secondary transition">Contatti</a></li>
+    </ul>
+  </div>
+</nav>
 
-{% include navbar.html %}
-{% include hero.html %}
-{% include about.html %}
-{% include experience.html %}
-{% include tasting.html %}
-{% include contact.html %}
-{% include footer.html %}
+ <!-- Hero Section -->
+  <section class="relative w-full h-screen flex items-center justify-center overflow-hidden">
+    <!-- Video -->
+    <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover filter brightness-100 z-0">
+      <source src="/assets/videos/video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Overlay scuro -->
+    <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 z-10"></div>
+
+    <!-- Testo centrato -->
+    <div class="relative z-20 text-center px-4">
+      <h1 class="text-5xl md:text-6xl font-extrabold text-white drop-shadow-2xl mb-4 animate-fadeIn">
+        Ebrezza Sailing
+      </h1>
+      <p class="max-w-xl mx-auto text-lg md:text-xl text-white drop-shadow-2xl animate-fadeIn delay-500">
+        Immagina di salire a bordo di una splendida barca a vela, issare le vele e salpare per vivere un’esperienza unica, che combina la passione per il mare, a quella per il buon vino.
+      </p>
+    </div>
+  </section>
+<section id="about" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      
+      <!-- Colonna Immagini -->
+      <div class="relative">
+        <div class="grid grid-cols-2 gap-4">
+          <img src="/assets/images/about-1.jpg" alt="Navigazione a vela"
+            class="rounded-2xl shadow-lg object-cover w-full h-64 border-4 border-primary-light">
+          <img src="/assets/images/about-2.jpg" alt="Degustazione a bordo"
+            class="rounded-2xl shadow-lg object-cover w-full h-64 mt-8 border-4 border-primary-light">
+        </div>
+      </div>
+
+      <!-- Colonna Testo -->
+      <div class="text-center md:text-left">
+        <h2 class="text-3xl md:text-4xl font-bold text-primary-dark mb-6">Chi siamo</h2>
+        <p class="text-lg text-text mb-4">
+          <strong class="text-primary">Ebrezza Sailing</strong> nasce dalla passione per il mare e per il buon vino. 
+          A bordo delle nostre barche a vela, vogliamo far vivere esperienze autentiche, dove il vento, il sole e il profumo del mare 
+          si uniscono al piacere di una degustazione di vini locali.
+        </p>
+        <p class="text-lg text-text mb-6">
+          Ogni uscita è un invito a rallentare, a riscoprire la semplicità e la bellezza di un brindisi al tramonto, 
+          immersi nella natura e nella compagnia giusta.
+        </p>
+        <a href="#experience" 
+           class="inline-block mt-4 bg-primary text-text-light py-3 px-6 rounded-full hover:bg-primary-dark transition">
+          Scopri le nostre esperienze
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>  
+<section id="experience" class="py-20 bg-gradient-to-b from-secondary/90 to-secondary/60 text-accent">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+    <h2 class="text-4xl font-bold mb-12 text-accent">Le nostre esperienze</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
+      
+      <!-- Card 1 -->
+      <div class="relative group rounded-2xl overflow-hidden shadow-2xl">
+        <img src="/assets/images/vela-escursione.jpg" alt="Escursioni in barca a vela"
+          class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-700 ease-out">
+        <div class="absolute inset-0 bg-neutral/50 group-hover:bg-neutral/20 transition duration-500"></div>
+        <div class="absolute inset-0 flex flex-col justify-end p-6 text-left">
+          <h3 class="text-2xl font-semibold mb-2">Escursioni in barca a vela</h3>
+          <p class="text-sm leading-relaxed">
+            Vivi un’esperienza di pura libertà, tra vento, mare e silenzio.  
+            Ideale per chi vuole rilassarsi e scoprire baie nascoste.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="relative group rounded-2xl overflow-hidden shadow-2xl">
+        <img src="/assets/images/weekend-pontine.jpg" alt="Weekend alle Isole Pontine"
+          class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-700 ease-out">
+        <div class="absolute inset-0 bg-neutral/50 group-hover:bg-neutral/20 transition duration-500"></div>
+        <div class="absolute inset-0 flex flex-col justify-end p-6 text-left">
+          <h3 class="text-2xl font-semibold mb-2">Weekend alle Isole Pontine</h3>
+          <p class="text-sm leading-relaxed">
+            Naviga verso Ponza e Palmarola, dormendo in rada e gustando un calice di vino al tramonto.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="relative group rounded-2xl overflow-hidden shadow-2xl">
+        <img src="/assets/images/corsi-vela.jpg" alt="Corsi di vela"
+          class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-700 ease-out">
+        <div class="absolute inset-0 bg-neutral/50 group-hover:bg-neutral/20 transition duration-500"></div>
+        <div class="absolute inset-0 flex flex-col justify-end p-6 text-left">
+          <h3 class="text-2xl font-semibold mb-2">Corsi di vela</h3>
+          <p class="text-sm leading-relaxed">
+            Impara le basi della navigazione o perfeziona le tue manovre con istruttori certificati.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="relative group rounded-2xl overflow-hidden shadow-2xl">
+        <img src="/assets/images/wine-tasting.jpg" alt="Wine tasting in mare"
+          class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-700 ease-out">
+        <div class="absolute inset-0 bg-neutral/50 group-hover:bg-neutral/20 transition duration-500"></div>
+        <div class="absolute inset-0 flex flex-col justify-end p-6 text-left">
+          <h3 class="text-2xl font-semibold mb-2">Wine tasting in mare</h3>
+          <p class="text-sm leading-relaxed">
+            Degustazioni guidate di vini locali a bordo, tra onde e tramonti mozzafiato.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="tasting" class="py-20 bg-white text-accent">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-10 px-6 lg:px-8">
+
+    <!-- Parte sinistra: testo -->
+    <div class="text-center lg:text-left space-y-6">
+      <h2 class="text-4xl font-bold text-primary">Wine Tasting a bordo</h2>
+      <p class="text-lg leading-relaxed text-black">
+        Degusta una selezione di vini locali, abbinati a sapori gourmet e all’atmosfera del mare.  
+        Un’esperienza che unisce navigazione, relax e cultura enologica.
+      </p>
+      <a href="/experience-pack"
+         class="inline-block bg-primary text-white py-3 px-8 rounded-full hover:bg-primary/90 transition">
+        Prenota la tua esperienza
+      </a>
+    </div>
+
+    <!-- Parte destra: video -->
+    <div class="relative  overflow-hidden shadow-2xl group">
+      <video autoplay muted loop playsinline
+             class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700 ease-out">
+        <source src="/assets/videos/wine-tasting.mp4" type="video/mp4">
+        Il tuo browser non supporta il tag video.
+      </video>
+      <div class="absolute inset-0 flex items-center justify-center">
+        <h3 class="text-3xl font-semibold text-accent drop-shadow-lg">Wine Tasting</h3>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact" class="py-20 bg-gradient-to-b from-secondary/90 to-secondary/60  text-center">
+  <div class="max-w-4xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-white mb-6">Contattaci</h2>
+    <p class="text-lg text-accent mb-12 leading-relaxed">
+      Hai domande o vuoi prenotare la tua esperienza in mare?  
+      Siamo qui per aiutarti a organizzare momenti indimenticabili a bordo.
+    </p>
+
+    <div class="flex flex-col sm:flex-row justify-center gap-6">
+      <!-- Bottone Email -->
+      <a href="mailto:info@ebrezzasailing.it"
+         class="flex items-center justify-center gap-2 bg-primary text-white py-3 px-8 rounded-full hover:bg-primary/90 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+             stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21.75 5.25v13.5a2.25 2.25 0 01-2.25 2.25H4.5A2.25 2.25 0 012.25 18.75V5.25A2.25 2.25 0 014.5 3h15a2.25 2.25 0 012.25 2.25zm-1.5 0L12 11.25 3.75 5.25" />
+        </svg>
+        Invia una mail
+      </a>
+
+      <!-- Bottone WhatsApp -->
+      <a href="https://wa.me/393401234567"
+         target="_blank"
+         class="flex items-center justify-center gap-2 bg-[#25D366] text-white py-3 px-8 rounded-full hover:bg-[#1DA851] transition">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"
+             class="w-6 h-6">
+          <path
+            d="M12.04 2.004A9.96 9.96 0 002.083 11.96a9.888 9.888 0 001.348 5.01L2 22l5.21-1.38a9.93 9.93 0 004.83 1.23h.004a9.96 9.96 0 000-19.919zM12.04 20a8.03 8.03 0 01-4.08-1.1l-.29-.17-3.09.82.83-3-.19-.31A8.06 8.06 0 0112.04 4a8.04 8.04 0 018.04 8.04A8.05 8.05 0 0112.04 20zm4.65-5.47c-.25-.13-1.48-.73-1.7-.82-.23-.08-.4-.12-.57.13-.17.25-.65.82-.8.98-.15.17-.3.19-.55.07-.25-.13-1.05-.38-2-1.22-.74-.66-1.24-1.48-1.38-1.73-.15-.25-.02-.39.11-.52.12-.12.25-.3.38-.45.13-.15.17-.25.25-.42.08-.17.04-.32-.02-.45-.06-.13-.57-1.36-.78-1.86-.21-.5-.42-.43-.57-.43h-.48c-.17 0-.45.07-.68.32-.23.25-.89.87-.89 2.13s.91 2.47 1.03 2.64c.13.17 1.79 2.73 4.33 3.82.61.26 1.09.42 1.46.54.61.19 1.16.16 1.59.1.48-.07 1.48-.61 1.7-1.19.21-.58.21-1.08.15-1.19-.06-.11-.23-.17-.48-.3z" />
+        </svg>
+        Scrivici su WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer class="py-8 bg-gray-800 text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <p>&copy; 2025 Ebrezza Sailing. Tutti i diritti riservati.</p>
+    <p class="mt-2">
+      <a href="/privacy-policy" class="hover:text-gray-400">Privacy Policy</a> | 
+      <a href="/terms-of-service" class="hover:text-gray-400">Termini e condizioni</a>
+    </p>
+  </div>
+</footer>
+
+
+  </body>
+</html>
