@@ -78,12 +78,12 @@
   <!-- Video -->
   <video autoplay muted loop playsinline webkit-playsinline preload="auto" 
          class="absolute top-0 left-0 w-full h-full object-cover filter brightness-100 z-0 pointer-events-none invisible md:visible">
-    <source src="/ebrezzasailing/assets/videos/video.mp4" type="video/mp4">
+    <source src="/ebrezzasailing/assets/videos/ebrezza-video.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 
   <img class="absolute top-0 left-0 w-full h-full object-cover filter brightness-100 z-0 pointer-events-none visible md:invisible" 
-       src="/ebrezzasailing/assets/images/vela-escursione.jpg">
+       src="/ebrezzasailing/assets/images/hero.png">
 
   <!-- Overlay scuro -->
   <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 z-10"></div>
@@ -146,69 +146,179 @@
     </div>
   </div>
 </section>  
-<section id="experience" class="py-20 bg-gradient-to-b from-secondary/90 to-secondary/60 text-accent">
+<section id="experience" class="py-20 bg-gradient-to-b from-secondary/90 to-secondary/60 text-accent" x-data="{ openModal: null }">
   <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
     <h2 class="text-4xl font-bold mb-12 text-accent">Le nostre esperienze</h2>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
       
-      <!-- Card 1 -->
-      <div class="relative group rounded-2xl overflow-hidden shadow-2xl">
+      <!-- Card -->
+      <div class="relative group rounded-2xl overflow-hidden shadow-2xl cursor-pointer"
+           @click="openModal = 'vela-escursione'">
         <img src="/ebrezzasailing/assets/images/vela-escursione.jpg" alt="Escursioni in barca a vela"
           class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-700 ease-out">
         <div class="absolute inset-0 bg-neutral/50 group-hover:bg-neutral/20 transition duration-500"></div>
         <div class="absolute inset-0 flex flex-col justify-end p-6 text-left">
           <h3 class="text-2xl font-semibold mb-2">Escursioni in barca a vela</h3>
-          <p class="text-sm leading-relaxed">
-            Vivi un’esperienza di pura libertà, tra vento, mare e silenzio.  
-            Ideale per chi vuole rilassarsi e scoprire baie nascoste.
-          </p>
+          <p class="text-sm leading-relaxed">Vivi un’esperienza di pura libertà, tra vento, mare e silenzio. Ideale per chi vuole rilassarsi e scoprire baie nascoste.</p>
         </div>
       </div>
 
-      <!-- Card 2 -->
-      <div class="relative group rounded-2xl overflow-hidden shadow-2xl">
+      <!-- Modal -->
+      <div
+        x-show="openModal === 'vela-escursione'"
+        x-transition
+        class="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
+        @click.self="openModal = null"
+        style="display:none">
+        <div class="bg-white text-gray-800 rounded-2xl max-w-3xl w-full mx-4 relative overflow-hidden">
+          <button class="absolute top-3 right-3 text-gray-500 hover:text-gray-800" @click="openModal = null">&times;</button>
+          <div class="p-6 text-left space-y-4">
+            <h3 class="text-2xl font-bold">Escursioni in barca a vela</h3>
+            <p class="text-base">Scopri la magia della vela con le nostre escursioni a partire da poche ore fino a 3 giorni.
+Navigheremo lungo la costa, esplorando baie incontaminate e calette segrete.
+Potrai partecipare alle manovre di bordo o semplicemente rilassarti al sole.
+</p>
+            <div class="grid grid-cols-2 gap-3">
+              
+              <img src="/ebrezzasailing/assets/images/nave_pianta.jpg" alt="Escursioni in barca a vela photo" class="rounded-lg object-cover w-full h-48">
+              
+              <img src="/ebrezzasailing/assets/images/nave_1.jpg" alt="Escursioni in barca a vela photo" class="rounded-lg object-cover w-full h-48">
+              
+              <img src="/ebrezzasailing/assets/images/nave_2.jpg" alt="Escursioni in barca a vela photo" class="rounded-lg object-cover w-full h-48">
+              
+              <img src="/ebrezzasailing/assets/images/nave_3.jpg" alt="Escursioni in barca a vela photo" class="rounded-lg object-cover w-full h-48">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card -->
+      <div class="relative group rounded-2xl overflow-hidden shadow-2xl cursor-pointer"
+           @click="openModal = 'weekend-pontine'">
         <img src="/ebrezzasailing/assets/images/weekend-pontine.jpg" alt="Weekend alle Isole Pontine"
           class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-700 ease-out">
         <div class="absolute inset-0 bg-neutral/50 group-hover:bg-neutral/20 transition duration-500"></div>
         <div class="absolute inset-0 flex flex-col justify-end p-6 text-left">
           <h3 class="text-2xl font-semibold mb-2">Weekend alle Isole Pontine</h3>
-          <p class="text-sm leading-relaxed">
-            Naviga verso Ponza e Palmarola, dormendo in rada e gustando un calice di vino al tramonto.
-          </p>
+          <p class="text-sm leading-relaxed">Naviga verso Ponza e Palmarola, dormendo in rada e gustando un calice di vino al tramonto.</p>
         </div>
       </div>
 
-      <!-- Card 3 -->
-      <div class="relative group rounded-2xl overflow-hidden shadow-2xl">
+      <!-- Modal -->
+      <div
+        x-show="openModal === 'weekend-pontine'"
+        x-transition
+        class="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
+        @click.self="openModal = null"
+        style="display:none">
+        <div class="bg-white text-gray-800 rounded-2xl max-w-3xl w-full mx-4 relative overflow-hidden">
+          <button class="absolute top-3 right-3 text-gray-500 hover:text-gray-800" @click="openModal = null">&times;</button>
+          <div class="p-6 text-left space-y-4">
+            <h3 class="text-2xl font-bold">Weekend alle Isole Pontine</h3>
+            <p class="text-base">Un weekend all’insegna della scoperta e del relax.
+Partiremo il venerdì sera per un’avventura tra le isole Pontine:
+notti in rada, cene sotto le stelle e bagni al mattino presto nelle acque cristalline.
+</p>
+            <div class="grid grid-cols-2 gap-3">
+              
+              <img src="/ebrezzasailing/assets/images/weekend-pontine.jpg" alt="Weekend alle Isole Pontine photo" class="rounded-lg object-cover w-full h-48">
+              
+              <img src="/ebrezzasailing/assets/images/weekend-ponza.jpg" alt="Weekend alle Isole Pontine photo" class="rounded-lg object-cover w-full h-48">
+              
+              <img src="/ebrezzasailing/assets/images/vela-ponza.png" alt="Weekend alle Isole Pontine photo" class="rounded-lg object-cover w-full h-48">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card -->
+      <div class="relative group rounded-2xl overflow-hidden shadow-2xl cursor-pointer"
+           @click="openModal = 'corsi-vela'">
         <img src="/ebrezzasailing/assets/images/corsi-vela.jpg" alt="Corsi di vela"
           class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-700 ease-out">
         <div class="absolute inset-0 bg-neutral/50 group-hover:bg-neutral/20 transition duration-500"></div>
         <div class="absolute inset-0 flex flex-col justify-end p-6 text-left">
           <h3 class="text-2xl font-semibold mb-2">Corsi di vela</h3>
-          <p class="text-sm leading-relaxed">
-            Impara le basi della navigazione o perfeziona le tue manovre con istruttori certificati.
-          </p>
+          <p class="text-sm leading-relaxed">Impara le basi della navigazione o perfeziona le tue manovre con istruttori certificati.</p>
         </div>
       </div>
 
-      <!-- Card 4 -->
-      <div class="relative group rounded-2xl overflow-hidden shadow-2xl">
-        <img src="/ebrezzasailing/assets/images/wine-tasting.jpg" alt="Wine tasting in mare"
+      <!-- Modal -->
+      <div
+        x-show="openModal === 'corsi-vela'"
+        x-transition
+        class="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
+        @click.self="openModal = null"
+        style="display:none">
+        <div class="bg-white text-gray-800 rounded-2xl max-w-3xl w-full mx-4 relative overflow-hidden">
+          <button class="absolute top-3 right-3 text-gray-500 hover:text-gray-800" @click="openModal = null">&times;</button>
+          <div class="p-6 text-left space-y-4">
+            <h3 class="text-2xl font-bold">Corsi di vela</h3>
+            <p class="text-base">Offriamo corsi di vela base, intermedio e avanzato.
+Ogni corso è strutturato in moduli pratici e teorici, con istruttori certificati e un approccio coinvolgente.
+</p>
+            <div class="grid grid-cols-2 gap-3">
+              
+              <img src="/ebrezzasailing/assets/images/corsi-vela.jpg" alt="Corsi di vela photo" class="rounded-lg object-cover w-full h-48">
+              
+              <img src="/ebrezzasailing/assets/images/corsi-vela-2.jpg" alt="Corsi di vela photo" class="rounded-lg object-cover w-full h-48">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card -->
+      <div class="relative group rounded-2xl overflow-hidden shadow-2xl cursor-pointer"
+           @click="openModal = 'wine-tasting'">
+        <img src="/ebrezzasailing/assets/images/tasting2.jpg" alt="Wine tasting in mare"
           class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-700 ease-out">
         <div class="absolute inset-0 bg-neutral/50 group-hover:bg-neutral/20 transition duration-500"></div>
         <div class="absolute inset-0 flex flex-col justify-end p-6 text-left">
           <h3 class="text-2xl font-semibold mb-2">Wine tasting in mare</h3>
-          <p class="text-sm leading-relaxed">
-            Degustazioni guidate di vini locali a bordo, tra onde e tramonti mozzafiato.
-          </p>
+          <p class="text-sm leading-relaxed">Degustazioni guidate di vini locali a bordo, tra onde e tramonti mozzafiato.</p>
         </div>
       </div>
 
+      <!-- Modal -->
+      <div
+        x-show="openModal === 'wine-tasting'"
+        x-transition
+        class="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
+        @click.self="openModal = null"
+        style="display:none">
+        <div class="bg-white text-gray-800 rounded-2xl max-w-3xl w-full mx-4 relative overflow-hidden">
+          <button class="absolute top-3 right-3 text-gray-500 hover:text-gray-800" @click="openModal = null">&times;</button>
+          <div class="p-6 text-left space-y-4">
+            <h3 class="text-2xl font-bold">Wine tasting in mare</h3>
+            <p class="text-base">Un'esperienza unica: degustazioni di vini selezionati, raccontati da sommelier professionisti,
+mentre navighiamo verso il tramonto. Accompagnato da piccoli abbinamenti gastronomici locali.
+</p>
+            <div class="grid grid-cols-2 gap-3">
+              
+              <img src="/ebrezzasailing/assets/images/aperitivo_3.JPG" alt="Wine tasting in mare photo" class="rounded-lg object-cover w-full h-48">
+              
+              <img src="/ebrezzasailing/assets/images/aperitivo_4.JPG" alt="Wine tasting in mare photo" class="rounded-lg object-cover w-full h-48">
+              
+              <img src="/ebrezzasailing/assets/images/aperitivo_5.JPG" alt="Wine tasting in mare photo" class="rounded-lg object-cover w-full h-48">
+              
+              <img src="/ebrezzasailing/assets/images/aperitivo_6.JPG" alt="Wine tasting in mare photo" class="rounded-lg object-cover w-full h-48">
+              
+              <img src="/ebrezzasailing/assets/images/nave-aperitivo.jpg" alt="Wine tasting in mare photo" class="rounded-lg object-cover w-full h-48">
+              
+              <img src="/ebrezzasailing/assets/images/sposa.jpg" alt="Wine tasting in mare photo" class="rounded-lg object-cover w-full h-48">
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      
     </div>
   </div>
 </section>
-
 <section id="tasting" class="py-20 bg-white text-accent">
   <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-10 px-6 lg:px-8">
 
