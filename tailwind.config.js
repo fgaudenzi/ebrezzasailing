@@ -3,6 +3,10 @@ module.exports = {
   content: ["./_includes/**/*.html", "./_layouts/**/*.html", "./*.html"],
   theme: {
     extend: {
+      fontFamily: {
+        heading: ['Safira March', 'serif'],
+        body: ['Glacial Indifference', 'sans-serif'],
+      },
       colors: {
         primary: "#4ED1D1",
         secondary: "#A41E22",
@@ -14,3 +18,5 @@ module.exports = {
   },
   plugins: [],
 };
+
+

@@ -1,11 +1,79 @@
+/* =========================
+   TAILWIND BASE
+   ========================= */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* =========================
+   KEYFRAMES E ANIMAZIONI
+   ========================= */
 @keyframes fadeIn {
-      0% { opacity: 0; transform: translateY(20px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
 .animate-fadeIn {
-      animation: fadeIn 1.5s ease-out forwards;
-    }
+  animation: fadeIn 1.5s ease-out forwards;
+}
+
+/* =========================
+   UTILITIES PERSONALIZZATE
+   ========================= */
+@layer utilities {
+  .text-secondary {
+    color: #A41E22 !important;
+  }
+}
+
+/* =========================
+   FONT BASE E HEADINGS
+   ========================= */
+@font-face {
+  font-family: 'Safira March';
+  src: url('/assets/fonts/safira-march.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Glacial Indifference';
+  src: url('/assets/fonts/GlacialIndifference-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@layer base {
+  body {
+    font-family: 'Glacial Indifference', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Safira March', serif;
+  }
+}
+
+/* =========================
+   STILE VIDEO
+   ========================= */
+video::-webkit-media-controls-overlay-play-button {
+  display: none;
+}
+
+*::-webkit-media-controls-panel {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
+*::-webkit-media-controls-play-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
+
+*::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+}
