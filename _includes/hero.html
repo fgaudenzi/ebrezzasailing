@@ -1,21 +1,37 @@
- <!-- Hero Section -->
-  <section class="relative w-full h-screen flex items-center justify-center overflow-hidden">
-    <!-- Video -->
-    <video autoplay muted loop playsinline class="absolute top-0 left-0 w-full h-full object-cover filter brightness-100 z-0">
-      <source src="{{ '/assets/videos/video.mp4' | relative_url }}" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+<!-- Hero Section -->
+<section class="relative w-full h-screen flex items-center justify-center overflow-hidden">
+  <!-- Video -->
+  <video autoplay muted loop playsinline webkit-playsinline preload="auto" 
+         class="absolute top-0 left-0 w-full h-full object-cover filter brightness-100 z-0 pointer-events-none invisible md:visible">
+    <source src="{{ '/assets/videos/ebrezza-video.mp4' | relative_url }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 
-    <!-- Overlay scuro -->
-    <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 z-10"></div>
+  <img class="absolute top-0 left-0 w-full h-full object-cover filter brightness-100 z-0 pointer-events-none visible md:invisible" 
+       src="{{ '/assets/images/hero.png' | relative_url}}">
 
-    <!-- Testo centrato -->
-    <div class="relative z-20 text-center px-4">
-      <h1 class="text-5xl md:text-6xl font-extrabold text-white drop-shadow-2xl mb-4 animate-fadeIn">
-        Ebrezza Sailing
+  <!-- Overlay scuro -->
+  <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-30 z-10"></div>
+
+  <!-- Testo centrato con logo -->
+  <div class="relative z-20 text-center px-4 flex flex-col md:flex-row items-center justify-center gap-8">
+    
+    <!-- Immagine tonda tipo logo -->
+    <img src="{{ '/assets/images/logo.png' | relative_url }}" 
+         alt="Logo" 
+         class="h-32 w-32 md:h-40 md:w-40 rounded-full shadow-lg flex-shrink-0">
+
+    <!-- Testo -->
+    <div class="max-w-xl text-center md:text-left">
+      <h1 class="text-5xl md:text-5xl font-extrabold text-white drop-shadow-[0_5px_15px_rgba(0,0,0,0.8)] mb-4 animate-fadeIn tracking-wider"  
+          style="text-shadow: 2px 2px 4px rgba(0,0,0,0.8), -2px -2px 4px rgba(255,255,255,0.1)">
+        eBrezza Vela & Vino
       </h1>
-      <p class="max-w-xl mx-auto text-lg md:text-xl text-white drop-shadow-2xl animate-fadeIn delay-500">
-        Immagina di salire a bordo di una splendida barca a vela, issare le vele e salpare per vivere un’esperienza unica, che combina la passione per il mare, a quella per il buon vino.
+      <hr class="border-white border-opacity-30 mb-4">
+      <p class="text-lg md:text-xl text-white drop-shadow-2xl animate-fadeIn delay-500">
+        Immagina di salire a bordo di una splendida barca a vela, issare le vele e salpare per vivere un'esperienza unica, che combina la passione per il mare, a quella per il buon vino.
       </p>
     </div>
-  </section>
+
+  </div>
+</section>

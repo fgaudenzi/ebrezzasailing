@@ -1,0 +1,47 @@
+<!-- _includes/recensioni.html -->
+<section id="recensioni" class="py-20 bg-white text-black">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-4xl font-extrabold mb-4">Cosa dicono di noi</h2>
+    <p class="text-lg text-gray-600 mb-12">
+      Le recensioni autentiche sul nostro servizio raccontano più di ogni parola.
+    </p>
+
+    <!-- Grid recensioni -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      {% for review in site.data.reviews %}
+        <div class="bg-gradient-to-b from-primary/90 to-primary/60 rounded-lg p-6 shadow-lg">
+          <div class="flex items-center mb-4">
+            <div class="h-12 w-12 rounded-full overflow-hidden mr-4 flex-shrink-0 border-solid border-2">
+              <img src="{{ review.image | relative_url }}" alt="{{ review.name }}" class="h-full w-full object-cover ">
+            </div>
+            <div class="text-left">
+              <p class="font-semibold text-white">{{ review.name }}</p>
+              <div class="flex items-center text-yellow-400">
+                {% for i in (1..5) %}
+                  {% if i <= review.rating %}
+                    <svg class="h-5 w-5 fill-current" viewBox="0 0 20 20">
+                      <path d="M10 15l-5.878 3.09 1.123-6.545L.488 6.91l6.562-.955L10 0l2.95 5.955 6.562.955-4.757 4.635 1.123 6.545z"/>
+                    </svg>
+                  {% else %}
+                    <svg class="h-5 w-5 fill-gray-500" viewBox="0 0 20 20">
+                      <path d="M10 15l-5.878 3.09 1.123-6.545L.488 6.91l6.562-.955L10 0l2.95 5.955 6.562.955-4.757 4.635 1.123 6.545z"/>
+                    </svg>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          <p class="text-gray-900 italic">“{{ review.text }}”</p>
+        </div>
+      {% endfor %}
+    </div>
+
+    <!-- Bottone per link Google -->
+    <div class="mt-12 text-center">
+      <a href="https://www.google.com/search?sa=X&sca_esv=71556d6a5c4e6ebd&tbm=lcl&sxsrf=AE3TifOaFT9C9pNiS0t_XR7A-12WYwWuXg:1761780103176&q=eBrezza%20-%20Vela%20e%20Vino%20Recensioni&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxI2MbAwtDQ2MjEytbAwsDQyMTey3MDI-IpRIdWpKLWqKlFBVyEsNSdRIVUhLDMvXyEoNTk1rzgzPy9zEStBJQDgjRuFYAAAAA&rldimm=4081932425880924729&hl=it-DE&ved=0CAcQ5foLahcKEwjA4YGqxsqQAxUAAAAAHQAAAAAQBg&biw=1920&bih=945&dpr=1#lkt=LocalPoiReviews&arid=Ci9DQUlRQUNvZENodHljRjlvT2xaSFRtTlNTalJ2YlhFNVVWZGxjMlp4ZFY5WlNHYxAB" target="_blank" 
+         class="inline-block bg-primary hover:bg-primary/90  text-white font-semibold py-3 px-6 rounded-lg transition">
+        Vedi tutte le recensioni su Google
+      </a>
+    </div>
+  </div>
+</section>

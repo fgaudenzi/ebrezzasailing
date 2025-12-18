@@ -1,0 +1,12 @@
+- name: "Angelica"
+  image: "/assets/images/reviews/angelica.png"
+  rating: 5
+  text: "Esperienza meravigliosa. Siamo stati con Ilaria e Valerio, due persone estremamente professionali e preparate che hanno reso l’esperienza magica. Ilaria bravissima e super competente ci accompagnava un buon vino al cibo ( altrettanto ottimo ). Colazione, pranzo, cena e aperitivo da sogno con sfondo il mare di Ponza e Palmarola! Davvero riduttivo spiegarlo a parole, il prossimo anno ci tornerò sicuramente"
+- name: "Stefano"
+  image: "/assets/images/reviews/stefano.png"
+  rating: 5
+  text: "Esperienza eccellente Ilaria un’ottima “Capitana” simpatica e solare, si vede che sa come andare per mare e padroneggia la barca con arte marinaresca; oltre le doti tecnico nautiche è anche la sommelier e la cuoca della barca per rendere l’esperienza ancora più piacevole; alla fine si dovrà pur mangiare e bene e sicuro non è un pasto tanto a riempiere. La giornata a bordo scorre piacevole e in totale relax. Consigliatissima a chi legge e io sicuramente ci tornerò."
+- name: "Giorgia"
+  image: "/assets/images/reviews/girl.png"
+  rating: 5
+  text: "Abbiamo festeggiato il mio addio al nubilato a bordo , é stato tutto fantastico, curato nei minimi dettagli , cibo e vino ottimi ed esperienza bellissima. Ilaria è stata meravigliosa si vede che é una professionista , nulla è lasciato al caso . Ma il pezzo forte è stato Ugo ,il personaggio di cui non sai di avere bisogno, un vero lupo di mare , ci siamo divertite tantissimo. La vela non ha veramente segreti per loro . Siamo state a Torre Astura , una giornata di sole indimenticabile, non mancherà sicuramente occasione per ritornare a trovarvi . Consiglio a tutti di prenotare al più presto!!!"

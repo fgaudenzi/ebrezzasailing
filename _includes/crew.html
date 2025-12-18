@@ -1,0 +1,28 @@
+<!-- _includes/equipaggio.html -->
+<section id="equipaggio" class="py-20 py-20 bg-gradient-to-b from-secondary/90 to-secondary/60 text-accent text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-4xl font-extrabold mb-4">Il nostro equipaggio</h2>
+    <p class="text-lg text-gray-300 mb-12">
+      Conosci le persone che rendono ogni esperienza a bordo di Ebrezza Sailing unica e indimenticabile.
+    </p>
+
+  <!-- Grid membri: 2 colonne su schermi >= sm e centrate -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8 justify-items-center">
+      
+      <!-- Singolo membro -->
+      <div class="flex flex-col items-center">
+        <img src="{{ '/assets/images/ilaria.jpg' | relative_url }}" alt="Ilaria" 
+             class="h-60 w-60 rounded-full border-4 border-secondary shadow-lg mb-4 object-cover">
+        <h3 class="text-xl font-semibold">Ilaria Migliorini</h3>
+        <p class="text-gray-400">Skipper</p>
+      </div>
+
+      <div class="flex flex-col items-center">
+        <img src="{{ '/assets/images/valerio.jpg' | relative_url }}" alt="Valerio" 
+             class="h-60 w-60 rounded-full border-4 border-secondary shadow-lg mb-4 object-cover">
+        <h3 class="text-xl font-semibold">Valerio Marini</h3>
+        <p class="text-gray-400">Co-Skipper</p>
+      </div>
+    </div>
+  </div>
+</section>

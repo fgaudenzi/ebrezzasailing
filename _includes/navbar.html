@@ -1,14 +1,51 @@
-<nav class="fixed top-0 w-full bg-primary bg-opacity-30 backdrop-blur-md shadow-md z-50 text-text-light">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-16">
-    <a href="{{ '/' | relative_url }}" class="flex items-center gap-2">
-      <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Logo" class="h-10 w-10 rounded-full border-2 border-secondary">
-      <span class="font-bold text-xl text-white tracking-wide">eBreZza</span>
-    </a>
-    <ul class="flex gap-6 text-background font-medium">
-      <li><a href="#about" class="hover:text-secondary transition">Chi siamo</a></li>
-      <li><a href="#experience" class="hover:text-secondary transition">Esperienze</a></li>
-      <li><a href="#tasting" class="hover:text-secondary transition">Wine Tasting</a></li>
-      <li><a href="#contact" class="hover:text-secondary transition">Contatti</a></li>
-    </ul>
+<!-- Navbar -->
+<nav class="fixed top-0 w-full bg-primary bg-opacity-30 backdrop-blur-md shadow-md z-50 text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+
+      <!-- Logo -->
+      <a href="{{ '/' | relative_url }}" class="flex items-center gap-2">
+        <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Logo" class="h-8 w-8 rounded-full border-2 border-white">
+        <span class="font-bold text-xl tracking-wide">eBrezza</span>
+      </a>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex items-center space-x-6">
+        <a href="#about" class="text-white hover:text-secondary transition">Chi siamo</a>
+        <a href="#experience" class="text-white hover:text-secondary transition">Esperienze</a>
+        <a href="#tasting" class="text-white hover:text-secondary transition">Wine Tasting</a>
+         <a href="#crew" class="text-white hover:text-secondary transition">Equipaggio</a>
+        <a href="#contact" class="text-white hover:text-secondary transition">Contatti</a>
+      </div>
+
+      <!-- Mobile Button -->
+      <div class="md:hidden flex items-center">
+        <button class="mobile-menu-button p-2 rounded-md hover:bg-primary-100 focus:outline-none focus:ring-2 focus:ring-gray-200">
+          <svg class="w-6 h-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu hidden md:hidden px-4 pb-4">
+    <a href="#about" class="block py-2 px-2 text-white hover:text-secondary transition">Chi siamo</a>
+    <a href="#experience" class="block py-2 px-2 text-white hover:text-secondary transition">Esperienze</a>
+    <a href="#tasting" class="block py-2 px-2 text-white hover:text-secondary transition">Wine Tasting</a>
+    <a href="#equipaggio" class="block py-2 px-2 text-white hover:text-secondary transition">Equipaggio</a>
+    <a href="#contact" class="block py-2 px-2 text-white hover:text-secondary transition">Contatti</a>
   </div>
 </nav>
+
+<!-- JS -->
+<script>
+  const btn = document.querySelector("button.mobile-menu-button");
+  const menu = document.querySelector(".mobile-menu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+</script>

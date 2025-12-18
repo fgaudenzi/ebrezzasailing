@@ -1,62 +1,42 @@
-<section id="experience" class="py-20 bg-gradient-to-b from-secondary/90 to-secondary/60 text-accent">
+<section id="experience" class="py-20 bg-gradient-to-b from-secondary/90 to-secondary/60 text-accent" x-data="{ openModal: null }">
   <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
     <h2 class="text-4xl font-bold mb-12 text-accent">Le nostre esperienze</h2>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
-      
-      <!-- Card 1 -->
-      <div class="relative group rounded-2xl overflow-hidden shadow-2xl">
-        <img src="/assets/images/vela-escursione.jpg" alt="Escursioni in barca a vela"
+      {% for exp in site.data.experience %}
+      <!-- Card -->
+      <div class="relative group rounded-2xl overflow-hidden shadow-2xl cursor-pointer"
+           @click="openModal = '{{ exp.id }}'">
+        <img src="{{ exp.cover_image | relative_url }}" alt="{{ exp.title }}"
           class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-700 ease-out">
         <div class="absolute inset-0 bg-neutral/50 group-hover:bg-neutral/20 transition duration-500"></div>
         <div class="absolute inset-0 flex flex-col justify-end p-6 text-left">
-          <h3 class="text-2xl font-semibold mb-2">Escursioni in barca a vela</h3>
-          <p class="text-sm leading-relaxed">
-            Vivi un’esperienza di pura libertà, tra vento, mare e silenzio.  
-            Ideale per chi vuole rilassarsi e scoprire baie nascoste.
-          </p>
+          <h3 class="text-2xl font-semibold mb-2">{{ exp.title }}</h3>
+          <p class="text-sm leading-relaxed">{{ exp.short_description }}</p>
         </div>
       </div>
 
-      <!-- Card 2 -->
-      <div class="relative group rounded-2xl overflow-hidden shadow-2xl">
-        <img src="/assets/images/weekend-pontine.jpg" alt="Weekend alle Isole Pontine"
-          class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-700 ease-out">
-        <div class="absolute inset-0 bg-neutral/50 group-hover:bg-neutral/20 transition duration-500"></div>
-        <div class="absolute inset-0 flex flex-col justify-end p-6 text-left">
-          <h3 class="text-2xl font-semibold mb-2">Weekend alle Isole Pontine</h3>
-          <p class="text-sm leading-relaxed">
-            Naviga verso Ponza e Palmarola, dormendo in rada e gustando un calice di vino al tramonto.
-          </p>
+      <!-- Modal -->
+      <div
+        x-show="openModal === '{{ exp.id }}'"
+        x-transition
+        class="fixed inset-0 bg-black/70 flex items-center justify-center z-50"
+        @click.self="openModal = null"
+        style="display:none">
+        <div class="bg-white text-gray-800 rounded-2xl max-w-5xl w-full mx-4 relative overflow-hidden">
+          <button class="absolute top-3 right-3 text-gray-500 hover:text-gray-800" @click="openModal = null">&times;</button>
+          <div class="p-6 text-left space-y-4">
+            <h3 class="text-2xl font-bold">{{ exp.title }}</h3>
+            <p class="text-base">{{ exp.long_description }}</p>
+            <div class="grid grid-cols-2 gap-3">
+              {% for photo in exp.gallery %}
+              <img src="{{ photo | relative_url }}" alt="{{ exp.title }} photo" class="rounded-lg object-cover w-full h-48">
+              {% endfor %}
+            </div>
+          </div>
         </div>
       </div>
-
-      <!-- Card 3 -->
-      <div class="relative group rounded-2xl overflow-hidden shadow-2xl">
-        <img src="/assets/images/corsi-vela.jpg" alt="Corsi di vela"
-          class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-700 ease-out">
-        <div class="absolute inset-0 bg-neutral/50 group-hover:bg-neutral/20 transition duration-500"></div>
-        <div class="absolute inset-0 flex flex-col justify-end p-6 text-left">
-          <h3 class="text-2xl font-semibold mb-2">Corsi di vela</h3>
-          <p class="text-sm leading-relaxed">
-            Impara le basi della navigazione o perfeziona le tue manovre con istruttori certificati.
-          </p>
-        </div>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="relative group rounded-2xl overflow-hidden shadow-2xl">
-        <img src="/assets/images/wine-tasting.jpg" alt="Wine tasting in mare"
-          class="w-full h-64 object-cover transform group-hover:scale-110 transition duration-700 ease-out">
-        <div class="absolute inset-0 bg-neutral/50 group-hover:bg-neutral/20 transition duration-500"></div>
-        <div class="absolute inset-0 flex flex-col justify-end p-6 text-left">
-          <h3 class="text-2xl font-semibold mb-2">Wine tasting in mare</h3>
-          <p class="text-sm leading-relaxed">
-            Degustazioni guidate di vini locali a bordo, tra onde e tramonti mozzafiato.
-          </p>
-        </div>
-      </div>
-
+      {% endfor %}
     </div>
   </div>
 </section>

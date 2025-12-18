@@ -14,13 +14,17 @@
       </a>
     </div>
 
-    <!-- Parte destra: video -->
-    <div class="relative  overflow-hidden shadow-2xl group">
+    <!-- Parte destra: immagine (sostituisce il video). Il video resta commentato sotto per riferimento. -->
+    <div class="relative overflow-hidden shadow-2xl group">
+      <!--
       <video autoplay muted loop playsinline
              class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700 ease-out">
-        <source src="/assets/videos/wine-tasting.mp4" type="video/mp4">
+        <source src="{{ '/assets/videos/wine-tasting.mp4' | relative_url }}" type="video/mp4">
         Il tuo browser non supporta il tag video.
       </video>
+      -->
+      <img src="{{ '/assets/images/winetaste.jpg' | relative_url }}" alt="Wine Tasting"
+           class="w-full h-full object-cover transform group-hover:scale-105 transition duration-700 ease-out">
       <div class="absolute inset-0 flex items-center justify-center">
         <h3 class="text-3xl font-semibold text-accent drop-shadow-lg">Wine Tasting</h3>
       </div>

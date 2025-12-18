@@ -1,0 +1,52 @@
+- id: vela-escursione
+  title: "La nostra barca"
+  short_description: "Vivi un’esperienza di pura libertà, tra vento, mare e silenzio. Ideale per chi vuole rilassarsi e scoprire baie nascoste."
+  long_description: |
+    La nostra Beneteau Oceanis 393, lunga 12 metri, è pensata per garantire comfort e praticità durante le vostre vacanze in mare. Offre tre accoglienti cabine matrimoniali e due bagni, di cui uno privato nella cabina di prua, per vivere la vita a bordo senza rinunce.
+    La dinette, disponibile sia all’interno che all’esterno, invita a momenti di convivialità, mentre la cucina è comoda e completamente attrezzata per ogni esigenza culinaria. All’esterno, la cuscineria e il prendisole offrono il massimo relax sotto il sole, e il pozzetto dispone di un frigorifero per mantenere sempre fresche le vostre bevande.
+    Per rendere le vostre giornate in mare ancora più dinamiche, la barca è dotata di un tender con motore ausiliario e di due tavole da SUP, perfette per esplorare baie e calette in totale libertà.
+  cover_image: "/assets/images/vela-escursione.jpg"
+  gallery:
+    - "/assets/images/nave_pianta_1.jpg"
+    - "/assets/images/nave_pianta_2.jpg"
+    - "/assets/images/nave_2.jpg"
+    - "/assets/images/nave_1.jpg"
+
+- id: weekend-pontine
+  title: "Weekend alle Isole Pontine"
+  short_description: "Naviga verso Ponza e Palmarola, dormendo in rada e gustando un calice di vino al tramonto."
+  long_description: |
+    Un weekend all’insegna della scoperta e del relax.
+    Partiremo il venerdì sera per un’avventura tra le isole Pontine:
+    notti in rada, cene sotto le stelle e bagni al mattino presto nelle acque cristalline.
+  cover_image: "/assets/images/weekend-pontine.jpg"
+  gallery:
+    - "/assets/images/weekend-pontine.jpg"
+    - "/assets/images/weekend-ponza.jpg"
+    - "/assets/images/vela-ponza.png"
+
+- id: corsi-vela
+  title: "Corsi di vela"
+  short_description: "Impara le basi della navigazione o perfeziona le tue manovre con istruttori certificati."
+  long_description: |
+    Offriamo corsi di vela base, intermedio e avanzato.
+    Ogni corso è strutturato in moduli pratici e teorici, con istruttori certificati e un approccio coinvolgente.
+  cover_image: "/assets/images/corsi-vela.jpg"
+  gallery:
+    - "/assets/images/corsi-vela.jpg"
+    - "/assets/images/corsi-vela-2.jpg"
+
+- id: wine-tasting
+  title: "Wine tasting in mare"
+  short_description: "Degustazioni guidate di vini locali a bordo, tra onde e tramonti mozzafiato."
+  long_description: |
+    Un'esperienza unica: degustazioni di vini selezionati, raccontati da sommelier professionisti,
+    mentre navighiamo verso il tramonto. Accompagnato da piccoli abbinamenti gastronomici locali.
+  cover_image: "/assets/images/tasting2.jpg"
+  gallery:
+    - "/assets/images/aperitivo_3.JPG"
+    - "/assets/images/aperitivo_4.JPG"
+    - "/assets/images/aperitivo_5.JPG"
+    - "/assets/images/aperitivo_6.JPG"
+    - "/assets/images/nave-aperitivo.jpg"
+    - "/assets/images/sposa.jpg"  
