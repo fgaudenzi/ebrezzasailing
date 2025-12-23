@@ -1,10 +1,22 @@
-- id: vela-escursione
-  title: "La nostra barca"
-  short_description: "Vivi un’esperienza di pura libertà, tra vento, mare e silenzio. Ideale per chi vuole rilassarsi e scoprire baie nascoste."
+- id: vela-escursione-lunch
+  title: "Wind & Wine Lunch"
+  short_description: "Vivi un’esperienza di pura libertà, tra vento, mare e buon vino. Ideale per chi vuole rilassarsi e scoprire nuovi gusti."
   long_description: |
-    La nostra Beneteau Oceanis 393, lunga 12 metri, è pensata per garantire comfort e praticità durante le vostre vacanze in mare. Offre tre accoglienti cabine matrimoniali e due bagni, di cui uno privato nella cabina di prua, per vivere la vita a bordo senza rinunce.
-    La dinette, disponibile sia all’interno che all’esterno, invita a momenti di convivialità, mentre la cucina è comoda e completamente attrezzata per ogni esigenza culinaria. All’esterno, la cuscineria e il prendisole offrono il massimo relax sotto il sole, e il pozzetto dispone di un frigorifero per mantenere sempre fresche le vostre bevande.
-    Per rendere le vostre giornate in mare ancora più dinamiche, la barca è dotata di un tender con motore ausiliario e di due tavole da SUP, perfette per esplorare baie e calette in totale libertà.
+    Dalle ore 11:00 alle ore 15:00: veleggiata rilassante, un bel tuffo nel mare cristallino con a seguire un pranzo leggero, con degustazione guidata di 3 vini in abbinamento.
+    La destinazione varia secondo le condizioni del mare, a discrezione dello Skipper Vini e piatti cambiano periodicamente per garantire un’esperienza sempre diversa.
+  cover_image: "/assets/images/vela-escursione.jpg"
+  gallery:
+    - "/assets/images/nave_pianta_1.jpg"
+    - "/assets/images/nave_pianta_2.jpg"
+    - "/assets/images/nave_2.jpg"
+    - "/assets/images/nave_1.jpg"
+    
+    - id: vela-escursione-sunset
+  title: "Wind & Wine Sunset"
+  short_description: "Navigazione a vela, con aperitivo e wine tasting"
+  long_description: |
+    Una veleggiata al tramonto tra luce dorata e mare calmo, con un tuffo rinfrescante prima che la nostra Sommelier crei per te un aperitivo speciale: tre calici selezionati e tapas gourmet, raccontati con passione.
+    La rotta segue il respiro del mare e ogni esperienza è unica, grazie alla scelta sempre nuova di vini e sapori.
   cover_image: "/assets/images/vela-escursione.jpg"
   gallery:
     - "/assets/images/nave_pianta_1.jpg"
@@ -12,36 +24,69 @@
     - "/assets/images/nave_2.jpg"
     - "/assets/images/nave_1.jpg"
 
-- id: weekend-pontine
-  title: "Weekend alle Isole Pontine"
-  short_description: "Naviga verso Ponza e Palmarola, dormendo in rada e gustando un calice di vino al tramonto."
+    - id: vela-escursione-dinner
+  title: "Wind & Wine Dinner & Sleep"
+  short_description: "Un’esperienza pensata per vivere il mare al tramonto, quando il cielo si accende d’oro e la navigazione diventa pura emozione."
   long_description: |
-    Un weekend all’insegna della scoperta e del relax.
-    Partiremo il venerdì sera per un’avventura tra le isole Pontine:
-    notti in rada, cene sotto le stelle e bagni al mattino presto nelle acque cristalline.
+    Una veleggiata serale, una sosta per un tuffo e poi una cena preparata dalla nostra cuoca e sommelier, con degustazione di quattro vini abbinati ad antipasti di mare e di terra, seguiti da un primo di pesce.
+    La serata prosegue come un viaggio sensoriale, arricchito da racconti, curiosità e spiegazioni sugli abbinamenti.
+    Dolce e brindisi sotto le stelle a chiudere l’esperienza.
+    La destinazione varia secondo le condizioni del mare; E' possibile anche cenare in porto.
+    Eventuali allergie vanno comunicate in fase di prenotazione.
+    Su richiesta, è possibile pernottare a bordo, ad un costo aggiuntivo di 50 euro a persona, comprensivo di colazione.
+  cover_image: "/assets/images/vela-escursione.jpg"
+  gallery:
+    - "/assets/images/nave_pianta_1.jpg"
+    - "/assets/images/nave_pianta_2.jpg"
+    - "/assets/images/nave_2.jpg"
+    - "/assets/images/nave_1.jpg"
+
+
+
+- id: weekend-pontine
+  title: "Wind & Wine Weekend"
+  short_description: "Crociera dalle 16:00 del Venerdì alle 18:00 della Domenica."
+  long_description: |
+    Immagina di svegliarti cullato dal mare, lontano dal caos, e di trasformare ogni pasto in una celebrazione del gusto, con abbinamenti armoniosi tra piatti raffinati e vini selezionati. Tra acque cristalline e fondali turchesi, vivrai un fine settimana immerso nelle meraviglie delle Isole Pontine.
+    A bordo, la nostra Sommelier guiderà le degustazioni: pranzi freschi in baia e cene galleggianti sotto le stelle,
+    con vini abbinati in modo da esaltare ogni portata.
+    Imbarco il venerdì pomeriggio da Nettuno, traversata di circa 5 ore fino a Palmarola,
+    crociera e relax tra le isole e sbarco la Domenica nel tardo pomeriggio, sempre a Nettuno.
+    Sono disponibili due proposte di cambusa, Silver o Gold, in base all’esperienza enogastronomica che si desidera vivere a bordo
   cover_image: "/assets/images/weekend-pontine.jpg"
   gallery:
     - "/assets/images/weekend-pontine.jpg"
     - "/assets/images/weekend-ponza.jpg"
     - "/assets/images/vela-ponza.png"
 
-- id: corsi-vela
-  title: "Corsi di vela"
-  short_description: "Impara le basi della navigazione o perfeziona le tue manovre con istruttori certificati."
+- id: weekend-pontine-long
+  title: "Crociera dalle 16:00 del Giovedì alle 18:00 della Domenica."
+  short_description: "Con il Wind & Wine Long Weekend l’esperienza si amplifica: più tempo, più navigazione, più gusto."
   long_description: |
-    Offriamo corsi di vela base, intermedio e avanzato.
-    Ogni corso è strutturato in moduli pratici e teorici, con istruttori certificati e un approccio coinvolgente.
+    A bordo ti attendono degustazioni guidate, abbinamenti eno-gastronomici curati, navigazione tra le stupende isole Pontine,
+    pranzi in rada, veleggiate al tramonto e cene indimenticabili sotto le stelle.
+    Puoi scegliere tra i pacchetti Cambusa Silver o Cambusa Gold, secondo il livello di esperienza – e di calici – che desideri vivere.
   cover_image: "/assets/images/corsi-vela.jpg"
   gallery:
     - "/assets/images/corsi-vela.jpg"
     - "/assets/images/corsi-vela-2.jpg"
 
-- id: wine-tasting
-  title: "Wine tasting in mare"
-  short_description: "Degustazioni guidate di vini locali a bordo, tra onde e tramonti mozzafiato."
+- id: weekly-cruising
+  title: "Wind & Wine Weekly Cruising"
+  short_description: "mmagina di svegliarti cullato dal mare, lontano dal caos, e di trasformare ogni pasto in una celebrazione del gusto."
   long_description: |
-    Un'esperienza unica: degustazioni di vini selezionati, raccontati da sommelier professionisti,
-    mentre navighiamo verso il tramonto. Accompagnato da piccoli abbinamenti gastronomici locali.
+    Giornate lente tra una veleggiata, un tuffo nel blu, un aperitivo al tramonto e un buon libro da leggere in navigazione, mentre il mare scivola veloce sotto lo scafo . Una vacanza indimenticabile, scandita da risate, buon vino e calette nascoste.
+    Tra acque cristalline e fondali turchesi, vivrai una settimana esclusiva, immerso nelle meraviglie del Mar Mediterraneo.
+    A bordo, una sommelier professionista guiderà le degustazioni:
+    pranzi freschi in baia e cene galleggianti sotto le stelle, con abbinamenti pensati per esaltare ogni calice.
+    Date da concordare in base alle disponibilità, si consiglia di fare richiesta con largo anticipo.
+    Sono disponibili due proposte di cambusa, Silver o Gold, in base all’esperienza enogastronomica che si desidera vivere a bordo.
+    Possibili itinerari:
+    Per una settimana di crociera è possibile scegliere tra diversi arcipelaghi. Partendo da Nettuno ne consigliamo due nello specifico:
+    • Rotta verso Sud, toccando Ponza, Palmarola, Ventotene Ischia e Procida.
+    • Rotta verso Nord visitando l’arcipelago dell’Argentario, Giannutri, Giglio, isola d’Elba.
+    La scelta dell’itinerario e della logistica dipende sia dal meteo che dall’esperienza degli ospiti: lo Skipper saprà consigliare la soluzione più adatta.
+    Valutiamo anche richieste con itinerari diversi, si puo chiedere eventualmente un preventivo.
   cover_image: "/assets/images/tasting2.jpg"
   gallery:
     - "/assets/images/aperitivo_3.JPG"
