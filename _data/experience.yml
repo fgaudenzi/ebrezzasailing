@@ -58,9 +58,9 @@
     - "/assets/images/vela-ponza.png"
 
 - id: weekend-pontine-long
-  title: "Crociera dalle 16:00 del Giovedì alle 18:00 della Domenica."
-  short_description: "Con il Wind & Wine Long Weekend l’esperienza si amplifica: più tempo, più navigazione, più gusto."
-  long_description: |
+  title: "Wind & Wine Long Weekend"
+  short_description: "Crociera dalle 16:00 del Giovedì alle 18:00 della Domenica."
+  long_description: |"Con il Wind & Wine Long Weekend l’esperienza si amplifica: più tempo, più navigazione, più gusto.
     A bordo ti attendono degustazioni guidate, abbinamenti eno-gastronomici curati, navigazione tra le stupende isole Pontine,
     pranzi in rada, veleggiate al tramonto e cene indimenticabili sotto le stelle.
     Puoi scegliere tra i pacchetti Cambusa Silver o Cambusa Gold, secondo il livello di esperienza – e di calici – che desideri vivere.
@@ -71,10 +71,9 @@
 
 - id: weekly-cruising
   title: "Wind & Wine Weekly Cruising"
-  short_description: "mmagina di svegliarti cullato dal mare, lontano dal caos, e di trasformare ogni pasto in una celebrazione del gusto."
-  long_description: |
-    Giornate lente tra una veleggiata, un tuffo nel blu, un aperitivo al tramonto e un buon libro da leggere in navigazione, mentre il mare scivola veloce sotto lo scafo . Una vacanza indimenticabile, scandita da risate, buon vino e calette nascoste.
-    Tra acque cristalline e fondali turchesi, vivrai una settimana esclusiva, immerso nelle meraviglie del Mar Mediterraneo.
+  short_description: "Una settimana di navigazione dove vuoi tu!" 
+  long_description: "Immagina di svegliarti cullato dal mare, lontano dal caos, e di trasformare ogni pasto in una celebrazione del gusto.
+  Giornate lente tra una veleggiata, un tuffo nel blu, un aperitivo al tramonto e un buon libro da leggere in navigazione, mentre il mare scivola veloce sotto lo scafo . Una vacanza indimenticabile, scandita da risate, buon vino e calette nascoste.Tra acque cristalline e fondali turchesi, vivrai una settimana esclusiva, immerso nelle meraviglie del Mar Mediterraneo.
     A bordo, una sommelier professionista guiderà le degustazioni:
     pranzi freschi in baia e cene galleggianti sotto le stelle, con abbinamenti pensati per esaltare ogni calice.
     Date da concordare in base alle disponibilità, si consiglia di fare richiesta con largo anticipo.
