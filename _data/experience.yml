@@ -35,12 +35,12 @@
     La destinazione varia secondo le condizioni del mare; E' possibile anche cenare in porto.
     Eventuali allergie vanno comunicate in fase di prenotazione.
     Su richiesta, è possibile pernottare a bordo, ad un costo aggiuntivo di 50 euro a persona, comprensivo di colazione.
-  cover_image: "/assets/images/foto NUOVE/w&w_dinner"
+  cover_image: "/assets/images/foto NUOVE/w&w_dinner7.jpg"
   gallery:
-    - "/assets/images/nave_pianta_1.jpg"
-    - "/assets/images/nave_pianta_2.jpg"
-    - "/assets/images/nave_2.jpg"
-    - "/assets/images/nave_1.jpg"
+    - "/assets/images/foto NUOVE/w&w_dinner6.jpg"
+    - "/assets/images/foto NUOVE/w&w_dinner5.jpg"
+    - "/assets/images/foto NUOVE/w&w_dinner.jpg"
+    - "/assets/images/foto NUOVE/w&w_dinner2.jpg
 
 - id: weekend-pontine
   title: "Wind & Wine Weekend"
@@ -52,12 +52,13 @@
     Imbarco il venerdì pomeriggio da Nettuno, traversata di circa 5 ore fino a Palmarola,
     crociera e relax tra le isole e sbarco la Domenica nel tardo pomeriggio, sempre a Nettuno.
     Sono disponibili due proposte di cambusa, Silver o Gold, in base all’esperienza enogastronomica che si desidera vivere a bordo
-  cover_image: "/assets/images/weekend-pontine.jpg"
+  cover_image: "/assets/images/foto NUOVE/w&w_weekend2.jpg"
   gallery:
-    - "/assets/images/weekend-pontine.jpg"
-    - "/assets/images/weekend-ponza.jpg"
-    - "/assets/images/vela-ponza.png"
-
+    - "/assets/images/foto NUOVE/w&w_weekend.jpg"
+    - "/assets/images/foto NUOVE/w&w_weekend3.jpg"
+    - "/assets/images/foto NUOVE/w&w_weekend4.jpg"
+    - "/assets/images/foto NUOVE/w&w_weekend5.jpg"
+    
 - id: weekend-pontine-long
   title: "Wind & Wine Long Weekend"
   short_description: "Crociera dalle 16:00 del Giovedì alle 18:00 della Domenica."
@@ -65,11 +66,13 @@
     A bordo ti attendono degustazioni guidate, abbinamenti eno-gastronomici curati, navigazione tra le stupende isole Pontine,
     pranzi in rada, veleggiate al tramonto e cene indimenticabili sotto le stelle.
     Puoi scegliere tra i pacchetti Cambusa Silver o Cambusa Gold, secondo il livello di esperienza – e di calici – che desideri vivere.
-  cover_image: "/assets/images/corsi-vela.jpg"
+  cover_image: "/assets/images/foto NUOVE/w&w_longweekend2.jpg"
   gallery:
-    - "/assets/images/corsi-vela.jpg"
-    - "/assets/images/corsi-vela-2.jpg"
-
+    - "/assets/images/foto NUOVE/w&w_longweekend.jpg"
+    - "/assets/images/foto NUOVE/w&w_longweekend3.jpg"
+    - "/assets/images/foto NUOVE/w&w_longweekend4.jpg"
+    - "/assets/images/foto NUOVE/w&w_sunset2.jpg"
+     
 - id: weekly-cruising
   title: "Wind & Wine Weekly Cruising"
   short_description: "Una settimana di navigazione dove vuoi tu!" 
@@ -85,11 +88,10 @@
     • Rotta verso Nord visitando l’arcipelago dell’Argentario, Giannutri, Giglio, isola d’Elba.
     La scelta dell’itinerario e della logistica dipende sia dal meteo che dall’esperienza degli ospiti: lo Skipper saprà consigliare la soluzione più adatta.
     Valutiamo anche richieste con itinerari diversi, si puo chiedere eventualmente un preventivo.
-  cover_image: "/assets/images/tasting2.jpg"
+  cover_image: "/assets/images/foto NUOVE/w&w_weekly.jpg"
   gallery:
-    - "/assets/images/aperitivo_3.JPG"
-    - "/assets/images/aperitivo_4.JPG"
-    - "/assets/images/aperitivo_5.JPG"
-    - "/assets/images/aperitivo_6.JPG"
-    - "/assets/images/nave-aperitivo.jpg"
-    - "/assets/images/sposa.jpg"  
+    - "/assets/images/foto NUOVE/w&w_weekly2.jpg"
+    - "/assets/images/foto NUOVE/w&w_weekly3.jpg"
+    - "/assets/images/foto NUOVE/w&w_weekly4.jpg"
+    - "/assets/images/foto NUOVE/w&w_weekly.jpg"
+    
