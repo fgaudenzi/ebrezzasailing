@@ -4,12 +4,12 @@
   long_description: |
     Dalle ore 11:00 alle ore 15:00: veleggiata rilassante, un bel tuffo nel mare cristallino con a seguire un pranzo leggero, con degustazione guidata di 3 vini in abbinamento.
     La destinazione varia secondo le condizioni del mare, a discrezione dello Skipper Vini e piatti cambiano periodicamente per garantire un’esperienza sempre diversa.
-  cover_image: "/assets/images/vela-escursione.jpg"
+  cover_image: "/assets/images/foto NUOVE/w&w_lunch5.jpg"
   gallery:
-    - "/assets/images/nave_pianta_1.jpg"
-    - "/assets/images/nave_pianta_2.jpg"
-    - "/assets/images/nave_2.jpg"
-    - "/assets/images/nave_1.jpg"
+    - "/assets/images/foto NUOVE/w&w_lunch.jpg"
+    - "/assets/images/foto NUOVE/w&w_lunch3.jpg"
+    - "/assets/images/foto NUOVE/w&w_lunch4.jpg"
+    - "/assets/images/foto NUOVE/w&w_lunch2.jpg"
     
     - id: vela-escursione-sunset
   title: "Wind & Wine Sunset"
@@ -17,12 +17,13 @@
   long_description: |
     Una veleggiata al tramonto tra luce dorata e mare calmo, con un tuffo rinfrescante prima che la nostra Sommelier crei per te un aperitivo speciale: tre calici selezionati e tapas gourmet, raccontati con passione.
     La rotta segue il respiro del mare e ogni esperienza è unica, grazie alla scelta sempre nuova di vini e sapori.
-  cover_image: "/assets/images/vela-escursione.jpg"
+  cover_image: "/assets/images/foto NUOVE/w&w_sunset8.JPG"
   gallery:
-    - "/assets/images/nave_pianta_1.jpg"
-    - "/assets/images/nave_pianta_2.jpg"
-    - "/assets/images/nave_2.jpg"
-    - "/assets/images/nave_1.jpg"
+    - "/assets/images/foto NUOVE/w&w_sunset7.jpg"
+    - "/assets/images/foto NUOVE/w&w_sunset.jpg"
+    - "/assets/images/foto NUOVE/w&w_sunset3.jpg"
+    - "/assets/images/foto NUOVE/w&w_sunset6.jpg"
+    - "/assets/images/foto NUOVE/w&w_sunset4.jpg"
 
     - id: vela-escursione-dinner
   title: "Wind & Wine Dinner & Sleep"
@@ -34,7 +35,7 @@
     La destinazione varia secondo le condizioni del mare; E' possibile anche cenare in porto.
     Eventuali allergie vanno comunicate in fase di prenotazione.
     Su richiesta, è possibile pernottare a bordo, ad un costo aggiuntivo di 50 euro a persona, comprensivo di colazione.
-  cover_image: "/assets/images/vela-escursione.jpg"
+  cover_image: "/assets/images/foto NUOVE/w&w_dinner"
   gallery:
     - "/assets/images/nave_pianta_1.jpg"
     - "/assets/images/nave_pianta_2.jpg"
