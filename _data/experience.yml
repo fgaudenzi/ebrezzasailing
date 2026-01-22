@@ -1,47 +1,45 @@
 - id: vela-escursione-lunch
   title: "Wind & Wine Lunch"
-  short_description: "Vivi un’esperienza di pura libertà, tra vento, mare e buon vino. Ideale per chi vuole rilassarsi e scoprire nuovi gusti."
+  short_description: "Vivi un'esperienza di pura libertà, tra vento, mare e buon vino. Ideale per chi vuole rilassarsi e scoprire nuovi gusti."
   long_description: |
     Dalle ore 11:00 alle ore 15:00: veleggiata rilassante, un bel tuffo nel mare cristallino con a seguire un pranzo leggero, con degustazione guidata di 3 vini in abbinamento.
-    La destinazione varia secondo le condizioni del mare, a discrezione dello Skipper Vini e piatti cambiano periodicamente per garantire un’esperienza sempre diversa.
-  cover_image: "/assets/images/foto NUOVE/w&w_lunch5.jpg"
+    La destinazione varia secondo le condizioni del mare, a discrezione dello Skipper Vini e piatti cambiano periodicamente per garantire un'esperienza sempre diversa.
+  cover_image: "/assets/images/ebrezza/w&w_lunch5.jpg"
   gallery:
-    - "/assets/images/foto NUOVE/w&w_lunch.jpg"
-    - "/assets/images/foto NUOVE/w&w_lunch3.jpg"
-    - "/assets/images/foto NUOVE/w&w_lunch4.jpg"
-    - "/assets/images/foto NUOVE/w&w_lunch2.jpg"
+    - "/assets/images/ebrezza/w&w_lunch.jpg"
+    - "/assets/images/ebrezza/w&w_lunch3.jpg"
+    - "/assets/images/ebrezza/w&w_lunch4.jpg"
+    - "/assets/images/ebrezza/w&w_lunch2.jpg"
     
-    - id: vela-escursione-sunset
+- id: vela-escursione-sunset
   title: "Wind & Wine Sunset"
   short_description: "Navigazione a vela, con aperitivo e wine tasting"
   long_description: |
     Una veleggiata al tramonto tra luce dorata e mare calmo, con un tuffo rinfrescante prima che la nostra Sommelier crei per te un aperitivo speciale: tre calici selezionati e tapas gourmet, raccontati con passione.
     La rotta segue il respiro del mare e ogni esperienza è unica, grazie alla scelta sempre nuova di vini e sapori.
-  cover_image: "/assets/images/foto NUOVE/w&w_sunset8.JPG"
+  cover_image: "/assets/images/ebrezza/w&w_sunset8.JPG"
   gallery:
-    - "/assets/images/foto NUOVE/w&w_sunset7.jpg"
-    - "/assets/images/foto NUOVE/w&w_sunset.jpg"
-    - "/assets/images/foto NUOVE/w&w_sunset3.jpg"
-    - "/assets/images/foto NUOVE/w&w_sunset6.jpg"
-    - "/assets/images/foto NUOVE/w&w_sunset4.jpg"
-
-    - id: vela-escursione-dinner
+    - "/assets/images/ebrezza/w&w_sunset7.jpg"
+    - "/assets/images/ebrezza/w&w_sunset.jpg"
+    - "/assets/images/ebrezza/w&w_sunset3.jpg"
+    - "/assets/images/ebrezza/w&w_sunset6.jpg"
+    - "/assets/images/ebrezza/w&w_sunset4.jpg"
+- id: vela-escursione-dinner
   title: "Wind & Wine Dinner & Sleep"
-  short_description: "Un’esperienza pensata per vivere il mare al tramonto, quando il cielo si accende d’oro e la navigazione diventa pura emozione."
+  short_description: "Un'esperienza pensata per vivere il mare al tramonto, quando il cielo si accende d'oro e la navigazione diventa pura emozione."
   long_description: |
     Una veleggiata serale, una sosta per un tuffo e poi una cena preparata dalla nostra cuoca e sommelier, con degustazione di quattro vini abbinati ad antipasti di mare e di terra, seguiti da un primo di pesce.
     La serata prosegue come un viaggio sensoriale, arricchito da racconti, curiosità e spiegazioni sugli abbinamenti.
-    Dolce e brindisi sotto le stelle a chiudere l’esperienza.
+    Dolce e brindisi sotto le stelle a chiudere l'esperienza.
     La destinazione varia secondo le condizioni del mare; E' possibile anche cenare in porto.
     Eventuali allergie vanno comunicate in fase di prenotazione.
     Su richiesta, è possibile pernottare a bordo, ad un costo aggiuntivo di 50 euro a persona, comprensivo di colazione.
-  cover_image: "/assets/images/foto NUOVE/w&w_dinner7.jpg"
+  cover_image: "/assets/images/ebrezza/w&w_dinner7.jpg"
   gallery:
-    - "/assets/images/foto NUOVE/w&w_dinner6.jpg"
-    - "/assets/images/foto NUOVE/w&w_dinner5.jpg"
-    - "/assets/images/foto NUOVE/w&w_dinner.jpg"
-    - "/assets/images/foto NUOVE/w&w_dinner2.jpg
-
+    - "/assets/images/ebrezza/w&w_dinner6.jpg"
+    - "/assets/images/ebrezza/w&w_dinner5.jpg"
+    - "/assets/images/ebrezza/w&w_dinner.jpg"
+    - "/assets/images/ebrezza/w&w_dinner2.jpg"
 - id: weekend-pontine
   title: "Wind & Wine Weekend"
   short_description: "Crociera dalle 16:00 del Venerdì alle 18:00 della Domenica."
@@ -51,47 +49,49 @@
     con vini abbinati in modo da esaltare ogni portata.
     Imbarco il venerdì pomeriggio da Nettuno, traversata di circa 5 ore fino a Palmarola,
     crociera e relax tra le isole e sbarco la Domenica nel tardo pomeriggio, sempre a Nettuno.
-    Sono disponibili due proposte di cambusa, Silver o Gold, in base all’esperienza enogastronomica che si desidera vivere a bordo
-  cover_image: "/assets/images/foto NUOVE/w&w_weekend2.jpg"
+    Sono disponibili due proposte di cambusa, Silver o Gold, in base all'esperienza enogastronomica che si desidera vivere a bordo
+  cover_image: "/assets/images/ebrezza/w&w_weekend2.jpg"
   gallery:
-    - "/assets/images/foto NUOVE/w&w_weekend.jpg"
-    - "/assets/images/foto NUOVE/w&w_weekend3.jpg"
-    - "/assets/images/foto NUOVE/w&w_weekend4.jpg"
-    - "/assets/images/foto NUOVE/w&w_weekend5.jpg"
+    - "/assets/images/ebrezza/w&w_weekend.jpg"
+    - "/assets/images/ebrezza/w&w_weekend3.jpg"
+    - "/assets/images/ebrezza/w&w_weekend4.jpg"
+    - "/assets/images/ebrezza/w&w_weekend5.jpg"
     
 - id: weekend-pontine-long
   title: "Wind & Wine Long Weekend"
   short_description: "Crociera dalle 16:00 del Giovedì alle 18:00 della Domenica."
-  long_description: |"Con il Wind & Wine Long Weekend l’esperienza si amplifica: più tempo, più navigazione, più gusto.
+  long_description: |
+    Con il Wind & Wine Long Weekend l'esperienza si amplifica: più tempo, più navigazione, più gusto.
     A bordo ti attendono degustazioni guidate, abbinamenti eno-gastronomici curati, navigazione tra le stupende isole Pontine,
     pranzi in rada, veleggiate al tramonto e cene indimenticabili sotto le stelle.
     Puoi scegliere tra i pacchetti Cambusa Silver o Cambusa Gold, secondo il livello di esperienza – e di calici – che desideri vivere.
-  cover_image: "/assets/images/foto NUOVE/w&w_longweekend2.jpg"
+  cover_image: "/assets/images/ebrezza/w&w_longweekend2.jpg"
   gallery:
-    - "/assets/images/foto NUOVE/w&w_longweekend.jpg"
-    - "/assets/images/foto NUOVE/w&w_longweekend3.jpg"
-    - "/assets/images/foto NUOVE/w&w_longweekend4.jpg"
-    - "/assets/images/foto NUOVE/w&w_sunset2.jpg"
+    - "/assets/images/ebrezza/w&w_longweekend.jpg"
+    - "/assets/images/ebrezza/w&w_longweekend3.jpg"
+    - "/assets/images/ebrezza/w&w_longweekend4.jpg"
+    - "/assets/images/ebrezza/w&w_sunset2.jpg"
      
 - id: weekly-cruising
   title: "Wind & Wine Weekly Cruising"
   short_description: "Una settimana di navigazione dove vuoi tu!" 
-  long_description: "Immagina di svegliarti cullato dal mare, lontano dal caos, e di trasformare ogni pasto in una celebrazione del gusto.
-  Giornate lente tra una veleggiata, un tuffo nel blu, un aperitivo al tramonto e un buon libro da leggere in navigazione, mentre il mare scivola veloce sotto lo scafo . Una vacanza indimenticabile, scandita da risate, buon vino e calette nascoste.Tra acque cristalline e fondali turchesi, vivrai una settimana esclusiva, immerso nelle meraviglie del Mar Mediterraneo.
+  long_description: |
+    Immagina di svegliarti cullato dal mare, lontano dal caos, e di trasformare ogni pasto in una celebrazione del gusto.
+    Giornate lente tra una veleggiata, un tuffo nel blu, un aperitivo al tramonto e un buon libro da leggere in navigazione, mentre il mare scivola veloce sotto lo scafo . Una vacanza indimenticabile, scandita da risate, buon vino e calette nascoste.Tra acque cristalline e fondali turchesi, vivrai una settimana esclusiva, immerso nelle meraviglie del Mar Mediterraneo.
     A bordo, una sommelier professionista guiderà le degustazioni:
     pranzi freschi in baia e cene galleggianti sotto le stelle, con abbinamenti pensati per esaltare ogni calice.
     Date da concordare in base alle disponibilità, si consiglia di fare richiesta con largo anticipo.
-    Sono disponibili due proposte di cambusa, Silver o Gold, in base all’esperienza enogastronomica che si desidera vivere a bordo.
+    Sono disponibili due proposte di cambusa, Silver o Gold, in base all'esperienza enogastronomica che si desidera vivere a bordo.
     Possibili itinerari:
     Per una settimana di crociera è possibile scegliere tra diversi arcipelaghi. Partendo da Nettuno ne consigliamo due nello specifico:
     • Rotta verso Sud, toccando Ponza, Palmarola, Ventotene Ischia e Procida.
-    • Rotta verso Nord visitando l’arcipelago dell’Argentario, Giannutri, Giglio, isola d’Elba.
-    La scelta dell’itinerario e della logistica dipende sia dal meteo che dall’esperienza degli ospiti: lo Skipper saprà consigliare la soluzione più adatta.
+    • Rotta verso Nord visitando l'arcipelago dell'Argentario, Giannutri, Giglio, isola d'Elba.
+    La scelta dell'itinerario e della logistica dipende sia dal meteo che dall'esperienza degli ospiti: lo Skipper saprà consigliare la soluzione più adatta.
     Valutiamo anche richieste con itinerari diversi, si puo chiedere eventualmente un preventivo.
-  cover_image: "/assets/images/foto NUOVE/w&w_weekly.jpg"
+  cover_image: "/assets/images/ebrezza/w&w_weekly.jpg"
   gallery:
-    - "/assets/images/foto NUOVE/w&w_weekly2.jpg"
-    - "/assets/images/foto NUOVE/w&w_weekly3.jpg"
-    - "/assets/images/foto NUOVE/w&w_weekly4.jpg"
-    - "/assets/images/foto NUOVE/w&w_weekly.jpg"
+    - "/assets/images/ebrezza/w&w_weekly2.jpg"
+    - "/assets/images/ebrezza/w&w_weekly3.jpg"
+    - "/assets/images/ebrezza/w&w_weekly4.jpg"
+    - "/assets/images/ebrezza/w&w_weekly.jpg"
     
